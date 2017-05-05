@@ -881,6 +881,7 @@ body {
 
 .header {
 	background: url("../img/bg-header-desk.png") no-repeat 50% 50%;
+	background-size: cover;
 }
 
 .cards {
