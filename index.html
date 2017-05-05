@@ -7,36 +7,135 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header >
-	<div class="header-wrap">
-		<div class="header">
-			<h1>Banner header</h1>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-				do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				Ut enim ad minim veniam, quis nostrud
-			</p>
+	<header class="header">
+		<div class="header-wrap">
+			<div class="header-logo">
+				<h1 class="header-title">Banner header</h1>
+				<p class="header-text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					Ut enim ad minim veniam, quis nostrud
+				</p>
+			</div>
 			<div class="form">
-				<span class="form-title">title</span>
-				<form>
-					<!--  -->
+				<span class="form-title">Request form</span>
+				<form class="header-form" action="" method="">
+					<input class="form-input" type="email" name="email" placeholder="Enter your E-mail">
+					<input class="form-input" type="text" name="name" placeholder="Enter your name">
+					<select class="country" name="country">
+						<option>Select your country</option>
+						<option selected value="c1">Russia</option>
+						<option value="c2">Ukraine</option>
+						<option value="c3">Byelorussia</option>
+				  </select>
+				  <div class="agree-wrap">
+				  	<input id="agree" type="checkbox" name="agree">
+				  	<label class="agree-label" for="agree">I agree with Terms & Conditions</label>
+				  </div>
+				  <div class="form-btn-wrap">
+				  	<input class="btn-form" type="submit" name="Submit" value="Submit">
+				  	<a class="form-link" href="#">Hyperlink</a>
+				  </div>
 				</form>
 			</div>
 		</div>
-	</div>
 	</header>
 	<main>
-		<div class="main-wrap">
-			<div class="cards">
-				<div class="card">
-					<h2 class="card-title">Post header 1</h2>
-					<a class="card-link" href="#"></a>
-					<p class="card-text">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-					</p>
+		<div class="cards">
+			<div class="container cards-wrap">
+				<div class="card card-1">
+					<div class="card-bg-overlay"></div>
+					<div class="card-block">
+						<h2 class="card-title">Post header 1</h2>
+						<a class="card-link" href="#"></a>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
+				</div>
+				<div class="card card-2">
+					<div class="card-bg-overlay"></div>
+					<div class="card-block">
+						<h2 class="card-title">Post header 2</h2>
+						<a class="card-link" href="#"></a>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
+				</div>
+				<div class="card card-3">
+					<div class="card-bg-overlay"></div>
+					<div class="card-block">
+						<h2 class="card-title">Post header 3</h2>
+						<a class="card-link" href="#"></a>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
+				</div>
+				<div class="card card-4">
+					<div class="card-bg-overlay"></div>
+					<div class="card-block">
+						<h2 class="card-title">Post header 4</h2>
+						<a class="card-link" href="#"></a>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
+				</div>
+				<div class="card card-5">
+					<div class="card-bg-overlay"></div>
+					<div class="card-block">
+						<h2 class="card-title">Post header 5</h2>
+						<a class="card-link" href="#"></a>
+						<p class="card-text">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="promo">
+			<div class="promo-wrap">
+				<ol class="promo-list">
+					<li class="promo-item">
+						Duis aute irure dolor in
+						reprehenderit<span class="promo-sup">1</span> in voluptate
+						velit
+					</li>
+					<li class="promo-item">
+						Ullamco laboris nisi ut
+						aliquip ex ea commodo
+						consequat 
+					</li>
+					<li class="promo-item">
+						Ut enim ad minim veniam,
+						quis nostrud exercitation
+					</li>
+					<li class="promo-item">
+						Et dolore magna aliqua
+					</li>
+					<li class="promo-item">
+						Sed do eiusmod tempor<span class="promo-sup">2</span>
+						incididunt ut labore
+					</li>
+					<li class="promo-item">
+						Lorem ipsum dolor sit
+						amet<span class="promo-sup">3</span>, consectetur
+						adipisicing elit
+					</li>
+				</ol>
+			</div>
+		</div>
 	</main>
+	<footer>
+		<div class="disclamers">
+			<ul class="disc-list">
+				<li class="disc-item"><span class="disc-sup">1 </span>Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</li>
+				<li class="disc-item"><span class="disc-sup">2 </span>Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+				<li class="disc-item"><span class="disc-sup">3 </span>Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+			</ul>
+		</div>
+	</footer>
 </body>
 </html>
