@@ -699,10 +699,18 @@ body {
 	background: #eeeeee;
 }
 
+.promo-img {
+	display: none;
+}
+
 .promo-wrap {
 	width: 97%;
 	min-width: 320px;
 	margin: 0 auto;
+}
+
+.promo-title {
+	display: none;
 }
 
 .promo-list {
@@ -879,6 +887,10 @@ body {
 	background: url("../img/bg-header-desk.png") no-repeat 50% 50%;
 }
 
+.cards {
+	margin-bottom: 25px;
+}
+
 .cards-wrap {
 	display: -ms-flexbox;
 	display: flex;
@@ -905,12 +917,12 @@ body {
 }
 
 .card-1,
-.card-2,
-.card-3 {
+.card-2 {
 	-ms-flex-positive: 1;
 	flex-grow: 1;
 }
 
+.card-3,
 .card-4,
 .card-5 {
 	-ms-flex-positive: 2;
@@ -943,6 +955,36 @@ body {
 
 .cards:after {
 	display: none;
+}
+
+.promo-title {
+	display: block;
+	font-size: 48px;
+	font-weight: bold;
+	color: #4488bb;
+	padding-left: 50px;
+}
+
+.promo-img {
+	display: block;
+}
+
+.promo::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.promo-img-wrap {
+	float: left;
+	width: 50%;
+	top: -25px;
+	position: relative;
+}
+
+.promo-wrap {
+	float: right;
+	width: 50%;
 }
 
 }
