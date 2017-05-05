@@ -733,7 +733,7 @@ body {
 }
 
 .card-block {
-	position: relative;
+	position: absolute;
 	z-index: 2;
 }
 
