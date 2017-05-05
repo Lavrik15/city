@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 	$(".popup-close").on("click", close);
 	$(".btn-link").on("click", close);
-	
+
 	function popupOpen() {
 		popup.show();
 		backdor.show();
@@ -104,7 +104,7 @@ $(document).ready(function(){
 		    if (!nameInputValidate) {
 		    	nameInput.css(error);
 		    }
-		    if (!nameInputValidate) {
+		    if (!emailInputValidate) {
 		    	emailInput.css(error);
 		    }
 		   	// selectCountry.siblings(".form-tooltip").show();
