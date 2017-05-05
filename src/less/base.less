@@ -190,8 +190,14 @@ body {
 .promo {
 	background: #eeeeee;
 }
+.promo-img {
+	display: none;
+}
 .promo-wrap {
 	.container
+}
+.promo-title {
+	display: none;
 }
 .promo-list {
 	list-style: none;
@@ -246,7 +252,7 @@ body {
     font-size: 0px;
     padding: 15px 15px;
     list-style: none;
-    box-shadow: -5px 0px 0px 0px #4488bb;
+    box-shadow: -5px 0px 0px -1px #4488bb;
 }
 .disc-item {
 	display: inline-block;
@@ -278,6 +284,9 @@ body {
 	.header {
 		background: url("../img/bg-header-desk.png") no-repeat 50% 50%;
 	}
+	.cards {
+		margin-bottom: 25px;
+	}
 	.cards-wrap {
 		display: flex;
 		flex-direction: row;
@@ -296,10 +305,10 @@ body {
 		cursor: pointer;
 	}
 	.card-1,
-	.card-2,
-	.card-3 {
+	.card-2 {
 		flex-grow: 1;
 	}
+	.card-3,
 	.card-4,
 	.card-5 {
 		flex-grow: 2;
@@ -325,5 +334,28 @@ body {
 	}
 	.cards:after {
 		display: none;
+	}
+	.promo-title {
+		display: block;
+		font-size: 48px;
+		font-weight: bold;
+		color: #4488bb;
+		padding-left: 50px;
+	}
+	.promo-img {
+		display: block;
+	}
+	.promo {
+		.clearfix();
+	}
+	.promo-img-wrap {
+		float: left;
+		width: 50%;
+		top: -25px;
+		position: relative;
 	} 
+	.promo-wrap {
+		float: right;
+		width: 50%;
+	}
 }
