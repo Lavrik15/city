@@ -20,20 +20,32 @@
 			<div class="form">
 				<span class="form-title">Request form</span>
 				<form class="header-form" action="" method="">
-					<input class="form-input" type="email" name="email" placeholder="Enter your E-mail">
-					<input class="form-input" type="text" name="name" placeholder="Enter your name">
-					<select class="country" name="country">
-						<option>Select your country</option>
-						<option selected value="c1">Russia</option>
-						<option value="c2">Ukraine</option>
-						<option value="c3">Byelorussia</option>
-				  </select>
+					<div class="input-wrap">
+						<input class="form-input" type="email" name="email" placeholder="Enter your E-mail">
+						<span class="input-label">Enter your E-mail</span>
+						<div class="form-tooltip">Enter correct E-mail</div>
+					</div>
+					<div class="input-wrap">
+						<input class="form-input" type="text" name="name" placeholder="Enter your name">
+						<span class="input-label">Enter your name</span>
+						<div class="form-tooltip">Enter correct name</div>
+					</div>
+					<div class="select-wrap">
+							<select class="country" name="country" placeholder="123">
+								<option disabled selected>Select your country</option>
+								<option value="c1">Russia</option>
+								<option value="c2">Ukraine</option>
+								<option value="c3">Zimbabwe</option>
+						  </select>
+						  <!-- <div class="form-tooltip">Select your country</div> -->
+					</div>
 				  <div class="agree-wrap">
 				  	<input id="agree" type="checkbox" name="agree">
 				  	<label class="agree-label" for="agree">I agree with Terms & Conditions</label>
+				  	<div class="form-tooltip">You must agree to the terms and conditions</div>
 				  </div>
 				  <div class="form-btn-wrap">
-				  	<input class="btn" type="submit" name="Submit" value="Submit">
+				  	<input class="btn btn-js" type="submit" name="Submit" value="Submit">
 				  	<a class="form-link" href="#">Hyperlink</a>
 				  </div>
 				</form>
@@ -159,8 +171,5 @@
 	<div class="backdor-popup"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/common.js"></script>
-	<script type="text/javascript">
-		
-	</script>
 </body>
 </html>

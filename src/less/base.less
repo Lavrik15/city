@@ -49,15 +49,60 @@ body {
 .header-form input::-moz-placeholder          {color:#aaaaaa; font-size: 16px}/* Firefox 19+ */
 .header-form input:-moz-placeholder           {color:#aaaaaa; font-size: 16px}/* Firefox 18- */
 .header-form input:-ms-input-placeholder      {color:#aaaaaa; font-size: 16px}
+.header-form input:focus::-webkit-input-placeholder {color: transparent}
+.header-form input:focus::-moz-placeholder          {color: transparent}
+.header-form input:focus:-moz-placeholder           {color: transparent}
+.header-form input:focus:-ms-input-placeholder      {color: transparent}
+
 .country,
 .form-input {
-	padding: 10px 10px;
+	padding: 15px 10px;
 	width: 100%;
 	box-sizing: border-box;
 	background-color: #eeeeee;
 	border: none;
 	border-radius: 3px;
 	margin-bottom: 15px;
+}
+.form-input:focus {
+	border:none;
+	outline: none;
+}
+.input-wrap {
+	position: relative;
+}
+.input-label {
+	position: absolute;
+    top: 4px;
+    left: 10px;
+    font-size: 10px;
+    line-height: 10px;
+    color: #aaa;
+}
+.form-tooltip {
+	display: none;
+	position: absolute;
+    left: 50%;
+    bottom: -25px;
+    margin-left: -90px;
+    font-size: 16px;
+    color: white;
+    background: #bb4444;
+    padding: 8px 13px;
+    border-radius: 2px;
+    z-index: 5;
+}
+.form-tooltip:after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	left: 50%;
+	top: -10px;
+	margin-left: -10px;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #bb4444;
 }
 .country {
 	color:#aaaaaa; 
@@ -74,6 +119,9 @@ body {
 .country:active {
 	border: none;
 	outline: none;
+}
+.select-wrap {
+	position: relative;
 }
 .agree-wrap label {
 	padding: 5px 0px 5px 30px;
