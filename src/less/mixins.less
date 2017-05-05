@@ -1,4 +1,21 @@
-.clearfix {
+.container() {
+  width: 97%;
+  min-width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 620px;
+  }
+
+  @media @desktop-widths {
+    width: 97%;
+    max-width: 1200px;
+  }
+}
+.container {
+  .container();
+}
+.clearfix() {
   &::after {
     content: "";
     display: table;

@@ -1,7 +1,329 @@
 body {
-  font-family: OpenSans, Arial, sans-serif;
-  font-weight: 300;
+  font-family:  Arial, OpenSans, sans-serif;
+  font-weight: 400;
   line-height: 24px;
-  font-size: 14px;
-  // background: red;
+  font-size: 18px;
+  background-color: white;
+}
+.header {
+	background: url("../img/bg-header.png") no-repeat 50% 50%;
+    background-size: cover;
+    padding-top: 42px;
+    padding-bottom: 15px;
+}
+.header-wrap {
+	.container();
+}
+.header-title {
+	font-size: 32px;
+	font-weight: bold;
+	color: white;
+	margin: 0px;
+	padding-bottom: 30px;
+	box-shadow: 0px 5px 0px 0px white;
+	margin-bottom: 25px;
+}
+.header-text {
+	color: white;
+	font-size: 18px;
+}
+.form {
+	background: white;
+	border-radius: 3px;
+	padding: 0px 10px;
+	padding-bottom: 15px;
+}
+.form-title {
+	display: inline-block;
+	width: 100%;
+	font-size: 24px;
+	font-weight: bold;
+	color: #4488bb;
+	margin-top: 23px;
+	margin-bottom: 18px;
+	padding-left: 20px;
+	box-sizing: border-box;
+}
+.header-form input::-webkit-input-placeholder {color:#aaaaaa; font-size: 16px}
+.header-form input::-moz-placeholder          {color:#aaaaaa; font-size: 16px}/* Firefox 19+ */
+.header-form input:-moz-placeholder           {color:#aaaaaa; font-size: 16px}/* Firefox 18- */
+.header-form input:-ms-input-placeholder      {color:#aaaaaa; font-size: 16px}
+.country,
+.form-input {
+	padding: 10px 10px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #eeeeee;
+	border: none;
+	border-radius: 3px;
+	margin-bottom: 15px;
+}
+.country {
+	color:#aaaaaa; 
+	font-size: 16px
+}
+.country option {
+	color: black;
+}
+
+.country:focus {
+	border: none;
+	outline: none;
+}
+.country:active {
+	border: none;
+	outline: none;
+}
+.agree-wrap label {
+	padding: 5px 0px 5px 30px;
+	color:#aaaaaa; 
+	font-size: 16px;
+}
+.agree-wrap {
+	position: relative;
+	margin-bottom: 15px;
+}
+.agree-label:after {
+	position: absolute;
+	content: "";
+	left: 0px;
+	top: 3px;
+	width: 18px;
+	height: 18px;
+	background-color: #eeeeee;
+	border-radius: 2px;
+}
+.agree-wrap input:checked ~ .agree-label:after {
+	background: url("../img/checkbox-on.png") no-repeat 50% 50% #eeeeee;
+}
+.agree-wrap input {
+	display: none;
+}
+.btn-form {
+	border: none;
+	color: #eee;
+	font-size: 16px;
+	border-radius: 2px;
+	background-image: linear-gradient( -90deg, rgb(68,136,187) 0%, rgb(46,93,128) 100%);
+	width: 125px;
+	height: 30px;
+}
+.form-link {
+    float: right;
+    color: #eeeeee;
+    text-decoration: none;
+}
+.cards {
+	position: relative;
+	padding-bottom: 10px;
+	padding-top: 15px;
+}
+.cards::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 103px;
+	background: #eeeeee;
+	bottom: 0px;
+	z-index: -1;
+}
+.card {
+	position: relative;
+	background-color: rgb(68, 136, 187);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 20px;
+}
+.card:last-child {
+	margin-bottom: 0px;
+}
+.card-1 {
+	background-image: url("../img/post-header-1.png");
+}
+.card-2 {
+	background-image: url("../img/post-header-1.png");
+}
+.card-3 {
+	background-image: url("../img/post-header-3.png");
+}
+.card-4 {
+	background-image: url("../img/post-header-4.png");
+}
+.card-5 {
+	background-image: url("../img/post-header-5.png");
+}
+.card-bg-overlay {
+	background-color: #4488bb;
+    opacity: 0.749;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
+.card-block {
+	position: relative;
+	z-index: 2;
+}
+.card-title {
+	margin: 0px;
+	padding: 15px 0px 0px 25px;
+	color: #eeeeee;
+}
+.card-link {
+	display: block;
+	position: absolute;
+	top: 11px;
+	right: 11px;
+	width: 18px;
+	height: 18px;
+	background: url("../img/icon.png") no-repeat 50% 50%;
+}
+.card-text {
+	padding: 0px 23px 10px 23px;
+	color: #eeeeee;
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+.promo {
+	background: #eeeeee;
+}
+.promo-wrap {
+	.container
+}
+.promo-list {
+	list-style: none;
+	counter-reset: li;
+	margin: 0 auto;
+	display: inline-block;
+	padding-left: 50px;
+}
+.promo-item {
+	position: relative;
+	color: #4488bb;
+	font-weight: bold;
+	font-size: 18px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+    border-bottom: 1px dashed #aaaaaa;
+}
+.promo-item:last-child {
+	border: none;
+}
+.promo-item:after {
+	content: counter(li);
+	counter-increment: li;
+	position: absolute;
+	font-size: 18px;
+	font-weight: bold;
+	left: -45px;
+	top: 50%;
+	width: 30px;
+	height: 30px;
+	background: #4488bb;
+	border-radius: 50%;
+	color: white;
+	text-align: center;
+	padding-top: 3px;
+	box-sizing: border-box;
+	margin-top: -15px;	
+}
+.promo-sup {
+	vertical-align: super;
+	font-weight: bold;
+	font-size: 14px;
+}
+.disclamers {
+	.container();
+	padding: 10px 15px;
+	box-sizing: border-box;
+}
+.disc-list {
+    margin: 0px;
+    /* padding-top: 0px; */
+    font-size: 0px;
+    padding: 15px 15px;
+    list-style: none;
+    box-shadow: -5px 0px 0px 0px #4488bb;
+}
+.disc-item {
+	display: inline-block;
+	font-size: 18px;
+	color: #4488bb;
+	vertical-align: top;
+	width: 100%;    
+}
+.disc-sup {
+	vertical-align: super;
+	font-size: 13px;
+}
+@media screen and (min-width: 1020px) {
+	.header-wrap {
+		.clearfix();
+	}
+	.form {
+		float: right;
+		width: 290px;
+	}
+	.header-logo {
+		float: left;
+		width: 500px;
+	}
+	.header-title {
+		min-width: 335px;
+	    display: inline-block;
+	}
+	.header {
+		background: url("../img/bg-header-desk.png") no-repeat 50% 50%;
+	}
+	.cards-wrap {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.card-text {
+		line-height: 18px;
+	}
+	.card {
+		flex-basis: 390px;
+		margin-right: 10px;
+		margin-bottom: 10px !important;
+		min-height: 150px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	.card-1,
+	.card-2,
+	.card-3 {
+		flex-grow: 1;
+	}
+	.card-4,
+	.card-5 {
+		flex-grow: 2;
+	}
+	.card-bg-overlay {
+		top: 75%;
+		transition: all .25s;
+	}
+	.card-block {
+		top: 70%;
+		transition: all .25s;
+	}
+	.card:hover .card-bg-overlay {
+		top: 0px;
+		transition: all .25s;
+	}
+	.card:hover .card-block {
+		top: 0px;
+		transition: all .25s;
+	}
+	.card-link {
+		top: 15px;
+	}
+	.cards:after {
+		display: none;
+	} 
 }
