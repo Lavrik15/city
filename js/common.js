@@ -1,4 +1,7 @@
 $(document).ready(function(){
+	if ( $.browser.msie ) {
+	  alert( $.browser.version );
+	}
 	// popup
 	var promoItem = $(".promo-item");
 	var popup = $(".popup");
