@@ -9,14 +9,7 @@ $(document).ready(function(){
 	$(".popup-close").on("click", close);
 	$(".btn-link").on("click", close);
 
-	function popupOpen() {
-		popup.show();
-		backdor.show();
-	}
-	function close() {
-		backdor.hide();
-		popup.hide();
-	}
+
 	// form 
 	// email validation
 	var success = {
@@ -53,6 +46,7 @@ $(document).ready(function(){
 	// Name validation
 	var nameInput = $("input[name='name']");
 	var nameInputValidate = false;
+
 	nameInput.on("change", function(){
 		var $this = $(this);
 		var inputVal = $this.val();
@@ -70,6 +64,7 @@ $(document).ready(function(){
 				"color" : "#bb4444"
 			});
 			$this.siblings(".form-tooltip").show();
+
 		}
 	});
 
@@ -116,12 +111,23 @@ $(document).ready(function(){
 	$(".agree-label").on("click", function(){
 		$(this).attr("style", "");
 	});
+
+	function popupOpen() {
+		popup.show();
+		backdor.show();
+	}
+	function close() {
+		backdor.hide();
+		popup.hide();
+	}
+
+	function validateEmail(email) {
+	    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	    return re.test(email);
+	}
+	function validateName(name) {
+		var re = /^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u;
+		return re.test(name);
+	}
+
 });
-function validateEmail(email) {
-    var re = '/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/';
-    return re.test(email);
-}
-function validateName(name) {
-	var re = "/^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u";
-	return re.test(name);
-}
