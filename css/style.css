@@ -1139,6 +1139,7 @@ body {
 .card-block {
 	top: 70%;
 	transition: all .25s;
+	position: absolute;
 }
 
 .card:hover .card-bg-overlay {
