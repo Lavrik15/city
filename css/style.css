@@ -733,7 +733,7 @@ body {
 }
 
 .card-block {
-	position: absolute;
+	position: relative;
 	z-index: 2;
 }
 
@@ -1014,6 +1014,10 @@ body {
 	height: 300px;
 	margin-top: -150px;
 	margin-left: -280px;
+}
+
+.card-block {
+	position: relative;
 }
 
 }
