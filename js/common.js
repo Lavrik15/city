@@ -1,8 +1,6 @@
 $(document).ready(function(){
-	if (navigator.appName == 'Microsoft Internet Explorer') {
-	  alert("MSIE");
-	  console.log("123");
-	}
+	var isIE11 = !!(navigator.userAgent.match(/Trident/) && navigator.userAgent.match(/rv[ :]11/));
+	console.log(isIE11);
 	// popup
 	var promoItem = $(".promo-item");
 	var popup = $(".popup");
