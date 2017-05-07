@@ -129,5 +129,3 @@ $(document).ready(function(){
 		return re.test(name);
 	}
 });
-
-
