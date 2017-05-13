@@ -125,7 +125,7 @@ $(document).ready(function(){
 		return re.test(email);
 	}
 	function validateName(name) {
-		var re = /^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/;
+		var re = /^[а-яА-ЯёЁa-zA-Z'][а-яА-ЯёЁa-zA-Z' ]+[а-яА-ЯёЁa-zA-Z']?$/;
 		return re.test(name);
 	}
 });
